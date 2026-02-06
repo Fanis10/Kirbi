@@ -7,6 +7,7 @@
 	<meta name="keywords" content="">
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.8/build/css/intlTelInput.css">
 	<title>Главная</title>
 </head>
 
@@ -19,7 +20,7 @@
             <a class="header__logo" href="index.html">
                 <img src="img/logo.png" alt="">
             </a>
-            <button class="header__btn btn btn-black__border">
+            <button class="header__btn btn btn-black__border" data-modal="contactModal">
                 <span class="btn-arrow">
                     <img src="img/arrow-right.svg" alt="">
                 </span>
@@ -42,7 +43,7 @@
 								<li>🎠 Школа, детский сад, аптека, магазины — всё рядом</li>
 								<li>✅ Более 1 000 семей уже выбрали наши участки</li>
 							</ul>
-							<button class="main__btn btn btn-black__green">
+							<button class="main__btn btn btn-black__green" data-modal="contactModal">
 								<span class="btn-arrow">
 									<img src="img/arrow-right2.svg" alt="">
 								</span>
@@ -141,7 +142,7 @@
 									<img src="img/roadmap-img2.webp" alt="">
 								</div>
 							</div>
-							<button class="roadmap__btn btn btn-black__green">
+							<button class="roadmap__btn btn btn-black__green" data-modal="contactModal">
 								<span class="btn-arrow">
 									<img src="img/arrow-right2.svg" alt="">
 								</span>
@@ -171,7 +172,7 @@
 								<img src="img/excursion-img.webp" alt="">
 							</a>
 						</div>
-						<button class="excursion__btn btn btn-black__green">
+						<button class="excursion__btn btn btn-black__green" data-modal="contactModal">
 								<span class="btn-arrow">
 									<img src="img/arrow-right2.svg" alt="">
 								</span>
@@ -205,7 +206,7 @@
 									<img src="img/roadmap-img2.webp" alt="">
 								</div>
 							</div>
-							<button class="land__btn roadmap__btn btn btn-black__green">
+							<button class="land__btn roadmap__btn btn btn-black__green" data-modal="contactModal">
 								<span class="btn-arrow">
 									<img src="img/arrow-right2.svg" alt="">
 								</span>
@@ -216,7 +217,8 @@
 					</div>
                 </div>
             </section>
-			<section class="gallery">
+<!--			delete-->
+			<section class="gallery" style="display: none">
 				<div class="container">
 					<div class="gallery__inner">
 						<h2 class="gallery__title h2">Современный загородный посёлок в стиле «slow living» с философией Lagom</h2>
@@ -324,7 +326,7 @@
 								<img src="img/map-img.webp" alt="">
 							</div>
 						</div>
-						<button class="gallery__btn btn btn-black__green">
+						<button class="gallery__btn btn btn-black__green" data-modal="contactModal">
 							<span class="btn-text">Забронировать участок</span>
 							<span class="animation"></span>
 						</button>
@@ -479,7 +481,7 @@
 							</div>
 						</div>
 						<div class="nostalgia__text">Задача проекта «Тёплое место» - вернуть человеку ностальгические воспоминания из детства в деревне и дать новый взгляд на загородный поселок как на место отдыха с семьей.</div>
-						<button class="nostalgia__btn btn btn-black__green">
+						<button class="nostalgia__btn btn btn-black__green" data-modal="contactModal">
 								<span class="btn-arrow">
 									<img src="img/arrow-right2.svg" alt="">
 								</span>
@@ -489,15 +491,331 @@
 					</div>
 				</div>
 			</section>
-
-
-
+			<!--			delete-->
+            <section class="construction" style="display: none">
+                <div class="container">
+                    <div class="construction__inner">
+                        <h2 class="construction__title h2">В поселке уже идет строительство домов</h2>
+                        <div class="construction__subtitle subtitle">есть участки с подрядом и без подряда</div>
+                        <div class="construction__flex">
+                            <div class="construction__group">
+                                <div class="construction__images">
+                                    <div class="construction__img">
+                                        <img src="img/construction-img.webp" alt="">
+                                    </div>
+                                    <div class="construction__img2">
+                                        <img src="img/construction-img2.webp" alt="">
+                                    </div>
+                                </div>
+                                <button class="construction__btn btn btn-black__green">
+									<span class="btn-arrow">
+										<img src="img/arrow-right2.svg" alt="">
+									</span>
+                                    <span class="btn-text">Получить каталог домов</span>
+                                    <span class="animation"></span>
+                                </button>
+                            </div>
+							<div class="construction__slider">
+								<div class="swiper mySwiper">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<img src="img/construction-img3.webp" alt="">
+										</div>
+										<div class="swiper-slide">
+											<img src="img/construction-img3.webp" alt="">
+										</div>
+										<div class="swiper-slide">
+											<img src="img/construction-img3.webp" alt="">
+										</div>
+										<div class="swiper-slide">
+											<img src="img/construction-img3.webp" alt="">
+										</div>
+									</div>
+									<div class="swiper-button-next"></div>
+									<div class="swiper-button-prev"></div>
+								</div>
+							</div>
+                        </div>
+						<button class="construction__btn btn btn-black__green" data-modal="contactModal">
+							<span class="btn-text">Забронировать участок</span>
+							<span class="animation"></span>
+						</button>
+                    </div>
+                </div>
+            </section>
+			<section class="reservations">
+				<div class="container">
+					<div class="reservations__inner">
+						<h2 class="reservations__title h2">Доступно бронирование участков</h2>
+						<div class="reservations__subtitle subtitle">в третьей очереди</div>
+						<div class="reservations__images">
+							<div class="reservations__img">
+								<img src="img/reservations-img.webp" alt="">
+							</div>
+							<div class="reservations__img2">
+								<img src="img/reservations-img2.webp" alt="">
+							</div>
+						</div>
+						<button class="reservations__btn btn btn-black__green" data-modal="contactModal">
+							<span class="btn-text">Забронировать участок</span>
+							<span class="animation"></span>
+						</button>
+					</div>
+				</div>
+			</section>
+			<section class="gallery gallery3">
+				<div class="container">
+					<div class="gallery__inner">
+						<h2 class="gallery__title h2">Загородная жизнь о которой вы мечтали</h2>
+						<div class="gallery__subgroup">
+							<span></span>
+							<div class="gallery__subtitle subtitle">теперь доступна</div>
+						</div>
+						<div class="gallery__cards gallery__images">
+							<a class="gallery__img" href="img/gallery-img18.webp" data-fancybox="gallery7">
+								<img src="img/gallery-img18.webp" alt="">
+							</a>
+							<a class="gallery__img" href="img/gallery-img19.webp" data-fancybox="gallery7">
+								<img src="img/gallery-img19.webp" alt="">
+							</a>
+							<a class="gallery__img" href="img/gallery-img20.webp" data-fancybox="gallery7">
+								<img src="img/gallery-img20.webp" alt="">
+							</a>
+							<a class="gallery__img" href="img/gallery-img21.webp" data-fancybox="gallery7">
+								<img src="img/gallery-img21.webp" alt="">
+							</a>
+							<a class="gallery__img" href="img/gallery-img22.webp" data-fancybox="gallery7">
+								<img src="img/gallery-img22.webp" alt="">
+							</a>
+							<a class="gallery__img" href="img/gallery-img23.webp" data-fancybox="gallery7">
+								<img src="img/gallery-img23.webp" alt="">
+							</a>
+							<a class="gallery__img" href="img/gallery-img24.webp" data-fancybox="gallery7">
+								<img src="img/gallery-img24.webp" alt="">
+							</a>
+							<a class="gallery__img" href="img/gallery-img25.webp" data-fancybox="gallery7">
+								<img src="img/gallery-img25.webp" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="reservation">
+				<div class="container">
+					<div class="reservation__inner">
+						<h2 class="reservation__title h2">Получите спецпредложение на землю в «Новом Кирби»</h2>
+						<div class="reservation__subtitle subtitle">Участки у озера и леса — выгодные условия только на старте продаж.</div>
+						<ul class="reservation__list">
+							<li>🔥 Цена ниже рынка</li>
+							<li>📈 Потенциал роста стоимости</li>
+							<li>🤝 Бесплатное бронирование</li>
+							<li>💰 Рассрочка без участия банка</li>
+						</ul>
+						<div class="reservation__bottom">
+							<div class="reservation__img">
+								<img src="img/reservation-img2.webp" alt="">
+							</div>
+							<button class="reservation__btn btn btn-black__green" data-modal="contactModal">
+								<span class="btn-arrow">
+									<img src="img/arrow-right2.svg" alt="">
+								</span>
+								<span class="btn-text">Получить спецпредложение по участкам в Новом Кирби</span>
+								<span class="animation"></span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="info2">
+				<div class="container">
+					<div class="info2__inner">
+						<h2 class="info2__title h2">Как выгодно приобрести участок?</h2>
+						<div class="info2__items">
+							<div class="info2__item">
+								<div class="info2__item-number">1</div>
+								<div class="info2__item-title">Принять от нас звонок</div>
+								<div class="info2__item-text">Менеджер свяжется с вами для уточнения деталей, ответит на ваши вопросы, расскажет о поселке и этапах развития коммуникаций, отправит вам недостающую информацию в WhatsApp.</div>
+							</div>
+							<div class="info2__item">
+								<div class="info2__item-number">2</div>
+								<div class="info2__item-title">Выбрать именно ваш участок</div>
+								<div class="info2__item-text">Выберите самые комфортные участки исходя из вашей потребности (для себя/для инвестиций/для родителей/с домом или без/ближе к лесу и озеру/10 соток или больше).</div>
+							</div>
+							<div class="info2__item">
+								<div class="info2__item-number">3</div>
+								<div class="info2__item-title">Зафиксировать его за собой</div>
+								<div class="info2__item-text">Бронирование бесплатно, чтобы его не забрал кто-то другой. Бронь держится за вами 5 дней.</div>
+							</div>
+							<div class="info2__item">
+								<div class="info2__item-number">4</div>
+								<div class="info2__item-title">Выбрать выгодные условия</div>
+								<div class="info2__item-text">В течении 5 дней необходимо определиться:</div>
+								<ul class="info2__item-list">
+									<li>покупка за наличные</li>
+									<li>рассрочка на 3 месяца без %</li>
+									<li>рассрочка на 6-12 месяцев с удорожанием</li>
+								</ul>
+							</div>
+							<div class="info2__item">
+								<div class="info2__item-number">5</div>
+								<div class="info2__item-title">Подписать договор</div>
+								<div class="info2__item-text">Подписываем документы с Ильясом Гимадовым или нашим юристом Дмитрием (имеющим право подписи), вносим оплату за участок наличными или переводом на реквизиты компании</div>
+							</div>
+							<div class="info2__item">
+								<div class="info2__item-number">6</div>
+								<div class="info2__item-title">Регистрация участка на вас</div>
+								<div class="info2__item-text">Для вашего удобства - можно зарегистрировать участок в нашем офисе с помощью электронной регистрации, чтобы не стоять очередь в МФЦ</div>
+							</div>
+						</div>
+						<button class="info2__btn btn btn-black__green" data-modal="contactModal">
+							<span class="btn-text">Забронировать участок</span>
+							<span class="animation"></span>
+						</button>
+					</div>
+				</div>
+			</section>
+			<section class="questions">
+				<div class="container">
+					<div class="questions__inner">
+						<h2 class="questions__title h2">Ответы на вопросы:</h2>
+						<div class="questions__items">
+							<div class="questions__item item">
+								<div class="questions__item-show item-show">
+									<div class="questions__item-title">Что если я передумал покупать после бронирования?</div>
+									<div class="questions__item-btn">
+										<svg role="presentation" focusable="false" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd" stroke-linecap="square"> <g transform="translate(1.000000, 1.000000)" stroke="#222222"> <path d="M0,11 L22,11"></path> <path d="M11,0 L11,22"></path> </g> </g> </svg>
+									</div>
+								</div>
+								<div class="questions__item-hidden item-hidden">
+									<div class="questions__item-text">
+										Если вы забронировали возможность выбрать участок и условия покупки прямо на старте - то вы один из первых, кто выберет себе любые понравившиеся участки.
+										<br>
+										Но если вы передумаете и в течении 5 дней после бронирования передумали - участок возвращается в продажу, бронь снимается.
+									</div>
+								</div>
+							</div>
+							<div class="questions__item item">
+								<div class="questions__item-show item-show">
+									<div class="questions__item-title">Что если я передумал покупать после бронирования?</div>
+									<div class="questions__item-btn">
+										<svg role="presentation" focusable="false" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd" stroke-linecap="square"> <g transform="translate(1.000000, 1.000000)" stroke="#222222"> <path d="M0,11 L22,11"></path> <path d="M11,0 L11,22"></path> </g> </g> </svg>
+									</div>
+								</div>
+								<div class="questions__item-hidden item-hidden">
+									<div class="questions__item-text">
+										Если вы забронировали возможность выбрать участок и условия покупки прямо на старте - то вы один из первых, кто выберет себе любые понравившиеся участки.
+										<br>
+										Но если вы передумаете и в течении 5 дней после бронирования передумали - участок возвращается в продажу, бронь снимается.
+									</div>
+								</div>
+							</div>
+							<div class="questions__item item">
+								<div class="questions__item-show item-show">
+									<div class="questions__item-title">Что если я передумал покупать после бронирования?</div>
+									<div class="questions__item-btn">
+										<svg role="presentation" focusable="false" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd" stroke-linecap="square"> <g transform="translate(1.000000, 1.000000)" stroke="#222222"> <path d="M0,11 L22,11"></path> <path d="M11,0 L11,22"></path> </g> </g> </svg>
+									</div>
+								</div>
+								<div class="questions__item-hidden item-hidden">
+									<div class="questions__item-text">
+										Если вы забронировали возможность выбрать участок и условия покупки прямо на старте - то вы один из первых, кто выберет себе любые понравившиеся участки.
+										<br>
+										Но если вы передумаете и в течении 5 дней после бронирования передумали - участок возвращается в продажу, бронь снимается.
+									</div>
+								</div>
+							</div>
+							<div class="questions__item item">
+								<div class="questions__item-show item-show">
+									<div class="questions__item-title">Что если я передумал покупать после бронирования?</div>
+									<div class="questions__item-btn">
+										<svg role="presentation" focusable="false" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd" stroke-linecap="square"> <g transform="translate(1.000000, 1.000000)" stroke="#222222"> <path d="M0,11 L22,11"></path> <path d="M11,0 L11,22"></path> </g> </g> </svg>
+									</div>
+								</div>
+								<div class="questions__item-hidden item-hidden">
+									<div class="questions__item-text">
+										Если вы забронировали возможность выбрать участок и условия покупки прямо на старте - то вы один из первых, кто выберет себе любые понравившиеся участки.
+										<br>
+										Но если вы передумаете и в течении 5 дней после бронирования передумали - участок возвращается в продажу, бронь снимается.
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="contacts">
+				<div class="container">
+					<div class="contacts__inner">
+						<div class="contacts__group">
+							<div class="contacts__title">Офис продаж Казань</div>
+							<div class="contacts__time">Время работы: Пн – Вс, 9.00 – 22.00</div>
+							<a class="contacts__phone" href="tel:79014176513">+7 901 417-65-13</a>
+							<div class="contacts__address">г. Казань, ул. Островского, 103</div>
+						</div>
+					</div>
+				</div>
+				<div class="map-wrap">
+					<div class="map" style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Яндекс Карты</a><a href="https://yandex.ru/maps/geo/selo_kirbi/53101120/?ll=49.312334%2C55.564175&utm_medium=mapframe&utm_source=maps&z=14" style="color:#eee;font-size:12px;position:absolute;top:14px;">Село Кирби — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=49.312334%2C55.564175&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzEwMTEyMBKAAdCg0L7RgdGB0LjRjywg0KDQtdGB0L_Rg9Cx0LvQuNC60LAg0KLQsNGC0LDRgNGB0YLQsNC9ICjQotCw0YLQsNGA0YHRgtCw0L0pLCDQm9Cw0LjRiNC10LLRgdC60LjQuSDRgNCw0LnQvtC9LCDRgdC10LvQviDQmtC40YDQsdC4IgoN7UNFQhVGPl5C&z=14" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+				</div>
+			</section>
 		</main>
-		<footer class="footer"></footer>
+		<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <ul class="footer__list">
+                <li><a href="">Политика конфиденциальности</a></li>
+                <li>
+                    <button data-modal="contactModal">
+                        <span>Записаться на экукурсию</span>
+                    </button>
+                </li>
+            </ul>
+            <a class="footer__logo" href="">
+                <img src="img/logo2.png" alt="">
+            </a>
+            <div class="footer__text">
+                <p>Загородный посёлок «Тёплое место». <strong>Официальный сайт.</strong></p>
+                <p><strong>Девелопер поселка - ИП Гимадов И.Ф.</strong></p>
+                <p>ИНН 161404188142</p>
+                <p>Все права защищены. Копирование и использование информации с сайта без согласия владельца запрещены и преследуется по закону.</p>
+            </div>
+        </div>
+    </div>
+</footer>
 
 	</div>
+
+	<div class="modal" id="contactModal">
+		<button type="button" class="_close-modal modal__close btn btn-animation btn-pink" data-bs-dismiss="modal" aria-label="Close">
+			<svg role="presentation" class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g stroke="none" stroke-width="1" fill="#212431" fill-rule="evenodd"> <rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect> <rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect> </g> </svg>
+		</button>
+		<div class="modal__dialog">
+			<div class="modal__content">
+				<div class="modal__title">Оставь заявку на бронирование участка</div>
+				<div class="modal__text">Напиши свой номер телефона и мы свяжемся с вами для уточнения деталей</div>
+				<form class="form">
+					<div class="form-group">
+						<input type="text" placeholder="Ваше имя">
+					</div>
+					<div class="form-group">
+						<input id="phone" type="tel" placeholder="">
+					</div>
+					<button class="form__btn btn btn-black__green">
+						<span class="btn-text">Выбрать участок</span>
+						<span class="animation"></span>
+					</button>
+					<div class="form__check">
+						<label>Нажимая на кнопку я соглашаюсь <a href="">с политикой конфиденциальности и даю согласие на рассылку</a></label>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
 	<script src="js/libs.min.js"></script>
 <script src="js/main.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.8/build/js/intlTelInput.min.js"></script>
+<!--<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.8/build/js/utils.js"></script>-->
 
 </body>
 
