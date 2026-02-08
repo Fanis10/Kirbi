@@ -36,9 +36,9 @@
 					<div class="main__inner">
 						<div class="main__group">
 							<h1 class="main__title">Участки в 25 км от Казани</h1>
-							<div class="main__subtitle">от 50 000 ₽ в месяц — удобная рассрочка без участия банка.</div>
+							<div class="main__subtitle">от 50 000 ₽ в месяц — беспроцентная рассрочка от собственника.</div>
 							<ul class="main__list">
-								<li>🏡Участки по соток</li>
+								<li>🏡Участки от 10 соток</li>
 								<li>🌿Вокруг леса и озера</li>
 								<li>🎠 Школа, детский сад, аптека, магазины — всё рядом</li>
 								<li>✅ Более 1 000 семей уже выбрали наши участки</li>
@@ -54,7 +54,10 @@
 					</div>
 				</div>
 			</section>
-			<section class="info">
+            <div id="marquee-container">
+                <div id="marquee">Рассрочка без %, 50 тыс. в месяц, ПВ 25%, срок рассрочки до 24 мес.</div>
+            </div>
+            <section class="info">
 				<div class="container">
 					<div class="info__inner">
 						<div class="info__desc">
@@ -62,7 +65,7 @@
 								<div class="info__icon">
 									<img src="img/graphics.png" alt="">
 								</div>
-								<div class="info__info">от 50 тыс. за сотку</div>
+								<div class="info__info">от 220 тыс. за сотку</div>
 							</div>
 							<div class="info__text">Более 1 000 семей уже стали владельцами земли вместе с нами.</div>
 							<div class="info__text2">Помогаем выбрать участок, оформляем документы и остаёмся на связи.</div>
@@ -85,7 +88,7 @@
 				<div class="container">
 					<div class="roadmap__inner">
 						<h2 class="roadmap__title h2">Дорожная карта проекта</h2>
-						<div class="roadmap__subtitle subtitle">~40% к стартовой стоимости уже в этом году</div>
+						<div class="roadmap__subtitle subtitle">Рост цены по очередям: фиксируем цену по брони на 5 дней</div>
 						<div class="roadmap__items">
 							<div class="roadmap__item">
 								<div class="roadmap__item-icon">
@@ -102,7 +105,7 @@
 								</div>
 								<div class="roadmap__item-price">от ~ 65 тыс./сотка</div>
 								<div class="roadmap__item-title">Асфальт (въезд)</div>
-								<div class="roadmap__item-info">сделано 700 м.</div>
+								<div class="roadmap__item-info">сделано</div>
 								<div class="roadmap__item-info2">август-сентябрь 2025</div>
 							</div>
 							<div class="roadmap__item">
@@ -111,7 +114,7 @@
 								</div>
 								<div class="roadmap__item-price">от ~ 69 тыс./сотка</div>
 								<div class="roadmap__item-title">Дороги (щебень)</div>
-								<div class="roadmap__item-info">сделано 7 км.</div>
+								<div class="roadmap__item-info">сделано</div>
 								<div class="roadmap__item-info2">сентябрь 2025</div>
 							</div>
 							<div class="roadmap__item">
@@ -120,7 +123,7 @@
 								</div>
 								<div class="roadmap__item-price">от ~ 79 тыс./сотка</div>
 								<div class="roadmap__item-title">Электричество</div>
-								<div class="roadmap__item-info orange">заявка подана</div>
+								<div class="roadmap__item-info">сделано</div>
 								<div class="roadmap__item-info2">1 квартал 2026</div>
 							</div>
 							<div class="roadmap__item">
@@ -129,7 +132,7 @@
 								</div>
 								<div class="roadmap__item-price">от ~ 90 тыс./сотка</div>
 								<div class="roadmap__item-title">Газ</div>
-								<div class="roadmap__item-info orange">заявка подана</div>
+								<div class="roadmap__item-info">сделано</div>
 								<div class="roadmap__item-info2">2026-2027 г.</div>
 							</div>
 						</div>
@@ -158,20 +161,10 @@
 					<div class="excursion__inner">
 						<h2 class="excursion__title h2">Запишитесь на экскурсию</h2>
 						<div class="excursion__subtitle subtitle">чтобы вживую увидеть расположение участков и задать вопросы собственнику</div>
-						<div class="excursion__images">
-							<a class="excursion__img" href="img/excursion-img.webp" data-fancybox="gallery2">
-								<img src="img/excursion-img.webp" alt="">
-							</a>
-							<a class="excursion__img" href="img/excursion-img.webp" data-fancybox="gallery2">
-								<img src="img/excursion-img.webp" alt="">
-							</a>
-							<a class="excursion__img" href="img/excursion-img.webp" data-fancybox="gallery2">
-								<img src="img/excursion-img.webp" alt="">
-							</a>
-							<a class="excursion__img" href="img/excursion-img.webp" data-fancybox="gallery2">
-								<img src="img/excursion-img.webp" alt="">
-							</a>
+						<div class="excursion__img2">
+							<img src="img/excursion-img.webp" alt="">
 						</div>
+						<div class="excursion__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, delectus eaque ex fugiat sed veritatis?</div>
 						<button class="excursion__btn btn btn-black__green" data-modal="contactModal">
 								<span class="btn-arrow">
 									<img src="img/arrow-right2.svg" alt="">
@@ -188,9 +181,9 @@
                         <h2 class="land__title h2">Выбирай участок сейчас</h2>
                         <div class="land__subtitle subtitle">цены и спрос на землю возле Казани растут</div>
                         <div class="land__flex">
-                            <div class="land__img">
-                                <img src="img/map-img.webp" alt="">
-                            </div>
+                            <a href="img/land-img2.webp" class="land__img" data-fancybox="gallery8">
+                                <img src="img/land-img2.webp" alt="">
+                            </a>
 							<div class="land__video">
 								<video controls autoplay muted loop preload="auto">
 									<source src="video/video.mp4" type="video/mp4">
@@ -198,14 +191,14 @@
 							</div>
                         </div>
 						<div class="land__bottom roadmap__bottom">
-							<div class="land__images roadmap__images">
-								<div class="land__img2 roadmap__img">
-									<img src="img/roadmap-img.webp" alt="">
-								</div>
-								<div class="land__img3 roadmap__img2">
-									<img src="img/roadmap-img2.webp" alt="">
-								</div>
-							</div>
+<!--							<div class="land__images roadmap__images">-->
+<!--								<div class="land__img2 roadmap__img">-->
+<!--									<img src="img/roadmap-img.webp" alt="">-->
+<!--								</div>-->
+<!--								<div class="land__img3 roadmap__img2">-->
+<!--									<img src="img/roadmap-img2.webp" alt="">-->
+<!--								</div>-->
+<!--							</div>-->
 							<button class="land__btn roadmap__btn btn btn-black__green" data-modal="contactModal">
 								<span class="btn-arrow">
 									<img src="img/arrow-right2.svg" alt="">
@@ -255,40 +248,40 @@
 			<section class="gallery gallery2">
 				<div class="container">
 					<div class="gallery__inner">
-						<h2 class="gallery__title h2">Что такое стиль «Slow Living»?</h2>
-						<div class="gallery__subtitle subtitle">это стиль жизни, где ты сам выбираешь свой ритм — вместо того, чтобы бежать за чужими целями</div>
-						<div class="gallery__images">
-							<a class="gallery__img" href="img/gallery-img9.webp" data-fancybox="gallery4">
-								<img src="img/gallery-img9.webp" alt="">
-							</a>
-							<a class="gallery__img" href="img/gallery-img10.webp" data-fancybox="gallery4">
-								<img src="img/gallery-img10.webp" alt="">
-							</a>
-							<a class="gallery__img" href="img/gallery-img11.webp" data-fancybox="gallery4">
-								<img src="img/gallery-img11.webp" alt="">
-							</a>
-							<a class="gallery__img" href="img/gallery-img12.webp" data-fancybox="gallery4">
-								<img src="img/gallery-img12.webp" alt="">
-							</a>
-						</div>
-						<div class="gallery__group">
-							<nav>
-								<p>Стиль «Slow Living» - это осознанная медлительность, жизнь в гармонии с природными ритмами, где ценятся:</p>
-								<ul>
-									<li><strong>Простота</strong>, вместо показухи</li>
-									<li><strong>Качество времени</strong>, вместо его экономии</li>
-									<li><strong>Живые эмоции</strong>, вместо цифровых впечатлений</li>
-								</ul>
-							</nav>
-							<nav>
-								<p>Почему это тренд?</p>
-								<ul>
-									<li><strong>Более 60 %</strong> городских жителей в России <strong>считают важным жить</strong> в замедленном ритме, <strong>в гармонии с собой</strong> (данные исследований)</li>
-									<li><strong>Запрос</strong> на экологичность и mental health <strong>растёт на 25% в год</strong></li>
-									<li><strong>43 %</strong> работающих россиян испытывают профессиональное выгорание — и <strong>хотят снижения темпа жизни, спокойствия</strong> и осознанности (данные исследований Skillbox за 2024 г.)</li>
-								</ul>
-							</nav>
-						</div>
+<!--						<h2 class="gallery__title h2">Что такое стиль «Slow Living»?</h2>-->
+<!--						<div class="gallery__subtitle subtitle">это стиль жизни, где ты сам выбираешь свой ритм — вместо того, чтобы бежать за чужими целями</div>-->
+<!--						<div class="gallery__images">-->
+<!--							<a class="gallery__img" href="img/gallery-img9.webp" data-fancybox="gallery4">-->
+<!--								<img src="img/gallery-img9.webp" alt="">-->
+<!--							</a>-->
+<!--							<a class="gallery__img" href="img/gallery-img10.webp" data-fancybox="gallery4">-->
+<!--								<img src="img/gallery-img10.webp" alt="">-->
+<!--							</a>-->
+<!--							<a class="gallery__img" href="img/gallery-img11.webp" data-fancybox="gallery4">-->
+<!--								<img src="img/gallery-img11.webp" alt="">-->
+<!--							</a>-->
+<!--							<a class="gallery__img" href="img/gallery-img12.webp" data-fancybox="gallery4">-->
+<!--								<img src="img/gallery-img12.webp" alt="">-->
+<!--							</a>-->
+<!--						</div>-->
+<!--						<div class="gallery__group">-->
+<!--							<nav>-->
+<!--								<p>Стиль «Slow Living» - это осознанная медлительность, жизнь в гармонии с природными ритмами, где ценятся:</p>-->
+<!--								<ul>-->
+<!--									<li><strong>Простота</strong>, вместо показухи</li>-->
+<!--									<li><strong>Качество времени</strong>, вместо его экономии</li>-->
+<!--									<li><strong>Живые эмоции</strong>, вместо цифровых впечатлений</li>-->
+<!--								</ul>-->
+<!--							</nav>-->
+<!--							<nav>-->
+<!--								<p>Почему это тренд?</p>-->
+<!--								<ul>-->
+<!--									<li><strong>Более 60 %</strong> городских жителей в России <strong>считают важным жить</strong> в замедленном ритме, <strong>в гармонии с собой</strong> (данные исследований)</li>-->
+<!--									<li><strong>Запрос</strong> на экологичность и mental health <strong>растёт на 25% в год</strong></li>-->
+<!--									<li><strong>43 %</strong> работающих россиян испытывают профессиональное выгорание — и <strong>хотят снижения темпа жизни, спокойствия</strong> и осознанности (данные исследований Skillbox за 2024 г.)</li>-->
+<!--								</ul>-->
+<!--							</nav>-->
+<!--						</div>-->
 						<div class="gallery__flex">
 							<div class="gallery__items">
 								<div class="gallery__item">
@@ -414,8 +407,8 @@
 										<img src="img/advantages-img6.webp" alt="">
 									</div>
 									<div class="advantage-card__desc">
-										<div class="advantage-card__title">Дороги и экопарковки</div>
-										<div class="advantage-card__text">Широкие улицы</div>
+										<div class="advantage-card__title">Дорога</div>
+										<div class="advantage-card__text">асфальтовая крошка, щебенение</div>
 									</div>
 								</div>
 								<div class="advantage-card">
@@ -423,8 +416,8 @@
 										<img src="img/advantages-img7.webp" alt="">
 									</div>
 									<div class="advantage-card__desc">
-										<div class="advantage-card__title">Концептуальные улицы</div>
-										<div class="advantage-card__text">Разные дома на выбор</div>
+										<div class="advantage-card__title">участки у озера/у леса</div>
+<!--										<div class="advantage-card__text">Разные дома на выбор</div>-->
 									</div>
 								</div>
 								<div class="advantage-card">
@@ -433,7 +426,7 @@
 									</div>
 									<div class="advantage-card__desc">
 										<div class="advantage-card__title">Инфраструктура</div>
-										<div class="advantage-card__text">Зоны отдыха и магазины</div>
+										<div class="advantage-card__text">детский сад-3 минуты, школа-5 минут, магазин-2 минуты и аптека-5 минут на машине</div>
 									</div>
 								</div>
 							</div>
@@ -441,7 +434,8 @@
 					</div>
 				</div>
 			</section>
-			<section class="nostalgia">
+			<!--			delete-->
+			<section class="nostalgia" style="display: none">
 				<div class="container">
 					<div class="nostalgia__inner">
 						<div class="nostalgia__cards">
@@ -491,7 +485,6 @@
 					</div>
 				</div>
 			</section>
-			<!--			delete-->
             <section class="construction" style="display: none">
                 <div class="container">
                     <div class="construction__inner">
@@ -543,7 +536,7 @@
                     </div>
                 </div>
             </section>
-			<section class="reservations">
+			<section class="reservations" style="display: none">
 				<div class="container">
 					<div class="reservations__inner">
 						<h2 class="reservations__title h2">Доступно бронирование участков</h2>
@@ -563,7 +556,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="gallery gallery3">
+			<section class="gallery gallery3" style="display: none">
 				<div class="container">
 					<div class="gallery__inner">
 						<h2 class="gallery__title h2">Загородная жизнь о которой вы мечтали</h2>
@@ -600,7 +593,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="reservation">
+			<section class="reservation" style="display: none">
 				<div class="container">
 					<div class="reservation__inner">
 						<h2 class="reservation__title h2">Получите спецпредложение на землю в «Новом Кирби»</h2>
@@ -626,7 +619,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="info2">
+			<section class="info2" style="display: none">
 				<div class="container">
 					<div class="info2__inner">
 						<h2 class="info2__title h2">Как выгодно приобрести участок?</h2>
@@ -681,61 +674,28 @@
 						<div class="questions__items">
 							<div class="questions__item item">
 								<div class="questions__item-show item-show">
-									<div class="questions__item-title">Что если я передумал покупать после бронирования?</div>
+									<div class="questions__item-title">Какой статус земли и можно ли прописаться?</div>
 									<div class="questions__item-btn">
 										<svg role="presentation" focusable="false" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd" stroke-linecap="square"> <g transform="translate(1.000000, 1.000000)" stroke="#222222"> <path d="M0,11 L22,11"></path> <path d="M11,0 L11,22"></path> </g> </g> </svg>
 									</div>
 								</div>
 								<div class="questions__item-hidden item-hidden">
 									<div class="questions__item-text">
-										Если вы забронировали возможность выбрать участок и условия покупки прямо на старте - то вы один из первых, кто выберет себе любые понравившиеся участки.
-										<br>
-										Но если вы передумаете и в течении 5 дней после бронирования передумали - участок возвращается в продажу, бронь снимается.
+										Земля ИЖС (индивидуальное жилищное строительство) — прописка возможна после оформления права собственности и регистрации дома.
 									</div>
 								</div>
 							</div>
 							<div class="questions__item item">
 								<div class="questions__item-show item-show">
-									<div class="questions__item-title">Что если я передумал покупать после бронирования?</div>
+									<div class="questions__item-title">Какие условия рассрочки (срок, ПВ)?</div>
 									<div class="questions__item-btn">
 										<svg role="presentation" focusable="false" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd" stroke-linecap="square"> <g transform="translate(1.000000, 1.000000)" stroke="#222222"> <path d="M0,11 L22,11"></path> <path d="M11,0 L11,22"></path> </g> </g> </svg>
 									</div>
 								</div>
 								<div class="questions__item-hidden item-hidden">
 									<div class="questions__item-text">
-										Если вы забронировали возможность выбрать участок и условия покупки прямо на старте - то вы один из первых, кто выберет себе любые понравившиеся участки.
-										<br>
-										Но если вы передумаете и в течении 5 дней после бронирования передумали - участок возвращается в продажу, бронь снимается.
-									</div>
-								</div>
-							</div>
-							<div class="questions__item item">
-								<div class="questions__item-show item-show">
-									<div class="questions__item-title">Что если я передумал покупать после бронирования?</div>
-									<div class="questions__item-btn">
-										<svg role="presentation" focusable="false" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd" stroke-linecap="square"> <g transform="translate(1.000000, 1.000000)" stroke="#222222"> <path d="M0,11 L22,11"></path> <path d="M11,0 L11,22"></path> </g> </g> </svg>
-									</div>
-								</div>
-								<div class="questions__item-hidden item-hidden">
-									<div class="questions__item-text">
-										Если вы забронировали возможность выбрать участок и условия покупки прямо на старте - то вы один из первых, кто выберет себе любые понравившиеся участки.
-										<br>
-										Но если вы передумаете и в течении 5 дней после бронирования передумали - участок возвращается в продажу, бронь снимается.
-									</div>
-								</div>
-							</div>
-							<div class="questions__item item">
-								<div class="questions__item-show item-show">
-									<div class="questions__item-title">Что если я передумал покупать после бронирования?</div>
-									<div class="questions__item-btn">
-										<svg role="presentation" focusable="false" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd" stroke-linecap="square"> <g transform="translate(1.000000, 1.000000)" stroke="#222222"> <path d="M0,11 L22,11"></path> <path d="M11,0 L11,22"></path> </g> </g> </svg>
-									</div>
-								</div>
-								<div class="questions__item-hidden item-hidden">
-									<div class="questions__item-text">
-										Если вы забронировали возможность выбрать участок и условия покупки прямо на старте - то вы один из первых, кто выберет себе любые понравившиеся участки.
-										<br>
-										Но если вы передумаете и в течении 5 дней после бронирования передумали - участок возвращается в продажу, бронь снимается.
+										Беспроцентная рассрочка от собственника: срок — до 24 месяцев, первоначальный взнос — от 25%. График платежей и расчет индивидуально.
+										Какие документы получу при покупке? Оформляем сделку по договору купли-продажи.
 									</div>
 								</div>
 							</div>
@@ -747,15 +707,15 @@
 				<div class="container">
 					<div class="contacts__inner">
 						<div class="contacts__group">
-							<div class="contacts__title">Офис продаж Казань</div>
-							<div class="contacts__time">Время работы: Пн – Вс, 9.00 – 22.00</div>
-							<a class="contacts__phone" href="tel:79014176513">+7 901 417-65-13</a>
-							<div class="contacts__address">г. Казань, ул. Островского, 103</div>
+							<div class="contacts__title">Офис продаж</div>
+							<div class="contacts__time">Время работы: Пн – Вс, 9.00 – 18.00</div>
+							<a class="contacts__phone" href="tel:79375283222‬">+7 937 528‑32‑22‬</a>
+							<div class="contacts__address">г. Казань, ул. Шаляпина 32</div>
 						</div>
 					</div>
 				</div>
 				<div class="map-wrap">
-					<div class="map" style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Яндекс Карты</a><a href="https://yandex.ru/maps/geo/selo_kirbi/53101120/?ll=49.312334%2C55.564175&utm_medium=mapframe&utm_source=maps&z=14" style="color:#eee;font-size:12px;position:absolute;top:14px;">Село Кирби — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=49.312334%2C55.564175&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzEwMTEyMBKAAdCg0L7RgdGB0LjRjywg0KDQtdGB0L_Rg9Cx0LvQuNC60LAg0KLQsNGC0LDRgNGB0YLQsNC9ICjQotCw0YLQsNGA0YHRgtCw0L0pLCDQm9Cw0LjRiNC10LLRgdC60LjQuSDRgNCw0LnQvtC9LCDRgdC10LvQviDQmtC40YDQsdC4IgoN7UNFQhVGPl5C&z=14" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+					<div class="map" style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/org/vm_stroy/41900270048/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">ВМ Строй</a><a href="https://yandex.ru/maps/43/kazan/category/construction_company/184107633/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Строительная компания в Казани</a><a href="https://yandex.ru/maps/43/kazan/category/architectural_firm/184107417/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">Архитектурное бюро в Казани</a><iframe src="https://yandex.ru/map-widget/v1/?ll=49.138934%2C55.769909&mode=poi&poi%5Bpoint%5D=49.138696%2C55.769969&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D41900270048&rtext=55.556622%2C49.310631~55.559151%2C49.308676&rtt=auto&ruri=~ymapsbm1%3A%2F%2Ftransit%2Fstop%3Fid%3D3721869846&utm_source=share&z=19" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
 				</div>
 			</section>
 		</main>
@@ -763,10 +723,15 @@
     <div class="container">
         <div class="footer__inner">
             <ul class="footer__list">
-                <li><a href="">Политика конфиденциальности</a></li>
+                <li><a target="_blank" href="files/Кирби о персональных данных.pdf">Политика конфиденциальности</a></li>
                 <li>
                     <button data-modal="contactModal">
-                        <span>Записаться на экукурсию</span>
+                        <span>Записаться на экскурсию</span>
+                    </button>
+                </li>
+                <li>
+                    <button data-modal="contactModal">
+                        <span>Получить карту свободных участков + цены</span>
                     </button>
                 </li>
             </ul>
@@ -774,10 +739,8 @@
                 <img src="img/logo2.png" alt="">
             </a>
             <div class="footer__text">
-                <p>Загородный посёлок «Тёплое место». <strong>Официальный сайт.</strong></p>
-                <p><strong>Девелопер поселка - ИП Гимадов И.Ф.</strong></p>
-                <p>ИНН 161404188142</p>
-                <p>Все права защищены. Копирование и использование информации с сайта без согласия владельца запрещены и преследуется по закону.</p>
+                <p>Коттеджный посёлок “Новое Кирби”. <strong>Официальный сайт.</strong></p>
+                <p>Предложение не является публичной офертой</p>
             </div>
         </div>
     </div>
@@ -801,11 +764,12 @@
 						<input id="phone" type="tel" placeholder="">
 					</div>
 					<button class="form__btn btn btn-black__green">
-						<span class="btn-text">Выбрать участок</span>
+						<span class="btn-text">Позвонить</span>
 						<span class="animation"></span>
 					</button>
 					<div class="form__check">
-						<label>Нажимая на кнопку я соглашаюсь <a href="">с политикой конфиденциальности и даю согласие на рассылку</a></label>
+						<input type="checkbox">
+						<label>Нажимая на кнопку я соглашаюсь <a target="_blank" href="files/Кирби о персональных данных.pdf">с политикой конфиденциальности и даю согласие на рассылку</a></label>
 					</div>
 				</form>
 			</div>
