@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.8/build/css/intlTelInput.css">
+	<title>Навигация</title>
+</head>
+
+
+<body>
+	<div class="wrapper">
+		<main class="content">
+			<section class="navigation">
+				<div class="container">
+					<div class="navigation__inner">
+						<ul class="navigation__list">
+							<li><a href="index.html">Главная</a></li>
+							<li>
+								<button class="navigation__btn btn btn-black__green" data-modal="contactModal">
+								<span class="btn-arrow">
+									<img src="img/arrow-right2.svg" alt="">
+								</span>
+									<span class="btn-text">Модалка</span>
+									<span class="animation"></span>
+								</button>
+							</li>
+							<li>
+								<button class="navigation__btn btn btn-black__green" data-modal="contactModal2">
+								<span class="btn-arrow">
+									<img src="img/arrow-right2.svg" alt="">
+								</span>
+									<span class="btn-text">Модалка 2</span>
+									<span class="animation"></span>
+								</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</main>
+	</div>
+
+	<div class="modal" id="contactModal">
+		<button type="button" class="_close-modal modal__close btn btn-animation btn-pink" data-bs-dismiss="modal" aria-label="Close">
+			<svg role="presentation" class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g stroke="none" stroke-width="1" fill="#212431" fill-rule="evenodd"> <rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect> <rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect> </g> </svg>
+		</button>
+		<div class="modal__dialog">
+			<div class="modal__content">
+				<div class="modal__title">Оставь заявку на бронирование участка</div>
+				<div class="modal__text">Напиши свой номер телефона и мы свяжемся с вами для уточнения деталей</div>
+				<form class="form">
+					<div class="form-group">
+						<input type="text" placeholder="Ваше имя">
+					</div>
+					<div class="form-group">
+						<input id="phone" type="tel" placeholder="">
+					</div>
+					<button class="form__btn btn btn-black__green">
+						<span class="btn-text">Позвонить</span>
+						<span class="animation"></span>
+					</button>
+					<div class="form__check">
+						<input type="checkbox">
+						<label>Нажимая на кнопку я соглашаюсь <a target="_blank" href="files/Кирби о персональных данных.pdf">с политикой конфиденциальности и даю согласие на рассылку</a></label>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="modal modal2 modal--active" id="contactModal2">
+		<button type="button" class="_close-modal modal__close btn btn-animation btn-pink" data-bs-dismiss="modal" aria-label="Close">
+			<svg role="presentation" class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g stroke="none" stroke-width="1" fill="#212431" fill-rule="evenodd"> <rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect> <rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect> </g> </svg>
+		</button>
+		<div class="modal__dialog">
+			<div class="modal__content">
+				<h2 class="modal__title h2">Спасибо за заявку</h2>
+				<div class="modal__text">Наш менеджер скоро с Вами свяжется</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.8/build/js/intlTelInput.min.js"></script>
+<!--<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.8/build/js/utils.js"></script>-->
+
+</body>
+
+</html>
+
+<style>
+	.navigation {
+		padding: 50px 0;
+	}
+
+	.navigation__list {
+		display: grid;
+		grid-template-columns: 100%;
+		gap: 24px;
+	}
+
+	.navigation__list li a {
+		font-size: 24px;
+		line-height: 120%;
+	}
+
+	.navigation__btn {
+		height: 60px;
+		gap: 10px;
+		padding: 5px 25px;
+	}
+
+	.navigation__btn span {
+		font-size: 18px;
+	}
+</style>
